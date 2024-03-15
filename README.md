@@ -16,34 +16,34 @@ Certifique-se de ter os seguintes requisitos atendidos antes de começar a traba
 
 1. Clone este repositório para seu ambiente de desenvolvimento local utilizando o comando:
 
-ˋˋˋ
+```
 git clone https://github.com/Maryjanesilva/exercios-lpa.git
 
-ˋˋˋ
+```
 2.   Acesse o diretório do projeto:
 
-ˋˋˋ
+```
 cd exercícios -lpa
 
-ˋˋˋ
+```
 3. Iniciando o projeto :
 
-ˋˋˋ
+```
 composer update
 
-ˋˋˋ
+```
 4. Iniciando o servidor:
 
-ˋˋˋ
+```
 php artisan serve --port=80
 
-ˋˋˋ
+```
 5. Acessar o Visual Studio Code:
 
-ˋˋˋ
+```
 code .
 
-ˋˋˋ
+```
 6. Importar o arquivo do Insomia 
 
 ## Licença
@@ -56,14 +56,3 @@ Em caso de duvidas, sugestões ou problemas, sinta-se á vontade para entrar em 
 ** Aviso** : certifique-se de substituir "Maryjanesilva" no link de clonagem e "mariana.silva20@portalsesisp.org.br" na seção de contato pelos valores correspondentes do seu próprio usuário do GitHub e endereço de e-mail
 
 Este é apenas um modelo básico de README .md, voce pode adptar e melhorar conforme suas necessidades específicas de projeto. Certifique-se de incluir informações importantes sobre como configurar, executar e testar exercícios, bem amigável e útil para outros desenvolvedores .
-
-
-
-
-
-
-
-
-
-
-
