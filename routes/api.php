@@ -206,3 +206,42 @@ Route::get('questao 16',function(Request $request){
         return ' eles sao iguais';
     };      
 });
+
+Route::get('lista6 exercicio1',function(Request $request){
+$nota1=$request->input('nota1');
+$nota2=$request->input('nota2');
+$nota3=$request->input('nota3');
+$r1=($nota1+$nota2+$nota3)/3;
+if($r1>=7){
+    return "aluno foi aprovado";
+}else{
+   return "aluno nao foi aprovado";
+}
+});
+
+Route::get('lista6 exercicio2',function(Request $request){
+$salario=$request->input('salario');
+if($salario>=1900){
+    return "voce e insento do imposto";
+    if($salario<=19001)
+    if($salario<=2800);
+    return "voce e aliquota de 7%";
+}
+if($salario>=2801){
+    if($salario<3700);
+    return 'voce aliquota de 15%';
+}
+});
+
+Route::get('lista6 exercicio3',function(Request $request){
+$ano=$request->input('ano');
+if($ano%4==0){
+    return "o ano e bissexto";
+}else{
+    return "o ano nao e bissexto";
+}
+});
+
+Route::get('lista6 exercicio4',function(Request $request){
+
+});
