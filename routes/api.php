@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -133,7 +134,7 @@ return 'o numero nao e multiplo de 7';
 }
 });
 
-Route::git('questao 14',function(Request $request){
+Route::get('questao 14',function(Request $request){
 $idade=$request->input('idade');
 if($idade>=18){
     return 'se ele tiver carta e for maior de 18 pode dirigir';
@@ -142,3 +143,66 @@ if($idade>=18){
 }
 });
 
+Route::get('questao 17',function(Request $request){
+ $idade=$request->input('idade');
+if($idade>=18){
+return ' ele e maior de idade e chama Mary';
+}else{
+return ' ele e menor de idade e chama Mary';
+}
+});
+
+Route::get('questao 19', function (Request $request) {
+    $numero1=$request->input('numero1');
+$numero2=$request->input('numero2');
+$resultado=$numero1*$numero2;
+if ($resultado >=100 ){
+    return 'seu numero e maior que 100';
+}else {
+    return 'seu numero e menor que 100';
+}
+});
+
+Route::get('questao 20',function(Request $request){
+    $numero1=$request->input('numero1');
+    $numero2=$request->input('numero2');
+    $resultado=$numero1+$numero2;
+    if($resultado%2 ==0){
+        $multiplicar=$numero1*$numero2;
+        return $numero1. "x". $numero2 . "=" . $multiplicar;
+    }else{
+        $dividir = $numero1/$numero2;
+        return $numero1 . "/" . $numero2 . "=" . $dividir;
+    };
+});
+
+Route::get('questao 18',function(Request $request){
+    $numero1=$request->input('numero1');
+    $numero2=$request->input('numero2');
+    if($numero1==0){
+        return 'nao e possivel efetuar a divisao ,o resultado e zero';
+    }else if ($numero2 ==0) {
+       return 'nao e possivel efetuar a divisao ,o resultado e zero';
+    };
+});
+
+Route::get('questao 11',function(Request $request){
+$numero=$request->input('numero');
+if($numero>100){
+    return 'numero e maior';
+}else if ($numero<100) {
+    return 'numero e menor';
+};
+});
+Route::get('questao 16',function(Request $request){
+    $numero1=$request->input('numero1');
+    return $numero1 . "/" . $numero2 . "=" . $resultado;
+    $numero2=$request->input('numero2');
+    if($numero1>$numero2){
+        return 'o numero menor e '$numero1;
+    }else if{
+        return 'o numero menor e'$numero2;
+    }else{
+        return ' eles sao iguais';
+    };      
+});
